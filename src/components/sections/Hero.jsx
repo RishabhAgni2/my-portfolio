@@ -22,16 +22,36 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-grid"
     >
-      {/* Ambient Glow */}
+      {/* Background Glow */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-accent/20 blur-[140px]" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-accent-2/10 blur-[120px]" />
       </div>
 
       <div className="max-w-4xl mx-auto px-6 text-center pt-24 pb-16">
-        {/* Badge */}
+
+        {/* Profile Image */}
         <motion.div
           custom={0}
+          initial="hidden"
+          animate="visible"
+          variants={fadeUp}
+          className="flex justify-center mb-6"
+        >
+          <div className="relative">
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-accent to-accent-2 opacity-60 blur-md" />
+
+            <img
+              src="/profile.jpg"
+              alt="Rishabh Agnihotri"
+              className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover border-2 border-bg"
+            />
+          </div>
+        </motion.div>
+
+        {/* Badge */}
+        <motion.div
+          custom={1}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
@@ -43,13 +63,13 @@ export default function Hero() {
 
         {/* Heading */}
         <motion.h1
-          custom={1}
+          custom={2}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
           className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-6"
         >
-          Full-stack developer{" "}
+          Full-Stack Developer{" "}
           <span className="bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-transparent">
             building secure, scalable products end-to-end.
           </span>
@@ -57,22 +77,25 @@ export default function Hero() {
 
         {/* Description */}
         <motion.p
-          custom={2}
+          custom={3}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
           className="text-base sm:text-lg text-text-secondary max-w-2xl mx-auto mb-10"
         >
-          I'm <strong>Rishabh Agnihotri</strong>, a full-stack developer who builds
-          complete products with React on the frontend and secure, scalable systems
-          on the backend — REST APIs, Redis caching, Bull Queue jobs, JWT
-          Authentication, and real-time applications. Currently exploring{" "}
-          <strong>Generative AI</strong> and pursuing B.Tech at IIIT Bhopal.
+          I'm <strong>Rishabh Agnihotri</strong>, a Full-Stack Developer who
+          builds modern web applications using React, Node.js, Express,
+          Django, and Django REST Framework. I enjoy designing secure REST
+          APIs, scalable backend systems, PostgreSQL & MongoDB databases,
+          Redis caching, Bull Queue background jobs, JWT Authentication, and
+          real-time applications with Socket.io. Currently exploring
+          <strong> Generative AI</strong> while pursuing my B.Tech at
+          IIIT Bhopal.
         </motion.p>
 
-        {/* Buttons */}
+        {/* CTA Buttons */}
         <motion.div
-          custom={3}
+          custom={4}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
@@ -105,11 +128,11 @@ export default function Hero() {
 
         {/* Stats */}
         <motion.div
-          custom={4}
+          custom={5}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="mt-16 flex flex-wrap items-center justify-center gap-6 text-text-secondary text-sm font-mono"
+          className="mt-16 flex flex-wrap items-center justify-center gap-6 text-sm font-mono text-text-secondary"
         >
           <span>CGPA 8.63</span>
           <span>•</span>
@@ -117,6 +140,7 @@ export default function Hero() {
           <span>•</span>
           <span>3★ CodeChef</span>
         </motion.div>
+
       </div>
     </section>
   );
