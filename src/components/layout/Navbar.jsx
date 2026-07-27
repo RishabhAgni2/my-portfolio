@@ -56,6 +56,7 @@ export default function Navbar() {
             src="/profile.jpg"
             alt="Rishabh Agnihotri"
             className="w-8 h-8 rounded-full object-cover border border-border"
+            style={{ objectPosition: "center 35%" }}
           />
 
           <span className="font-mono text-lg font-bold tracking-tight text-text-primary">

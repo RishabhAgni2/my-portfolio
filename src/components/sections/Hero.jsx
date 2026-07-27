@@ -44,7 +44,8 @@ export default function Hero() {
             <img
               src="/profile.jpg"
               alt="Rishabh Agnihotri"
-              className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover border-2 border-bg"
+              className="relative w-36 h-36 sm:w-40 sm:h-40 rounded-full object-cover border-2 border-bg"
+              style={{ objectPosition: "center 35%" }}
             />
           </div>
         </motion.div>
