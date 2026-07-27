@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import TechBadge from "./TechBadge";
 import GlowButton from "./GlowButton";
 
-export default function FeaturedProjectCard({ project }) {
+export default function FeaturedProjectCard({ project, badgeLabel = "Featured Project" }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 32 }}
@@ -21,7 +21,7 @@ export default function FeaturedProjectCard({ project }) {
         <div className="flex items-center gap-2 mb-4">
           <span className="w-1.5 h-1.5 rounded-full bg-accent-2 animate-pulse" />
           <span className="text-xs font-mono uppercase tracking-widest text-accent-2">
-            Featured Project
+            {badgeLabel}
           </span>
         </div>
 
@@ -32,7 +32,7 @@ export default function FeaturedProjectCard({ project }) {
         <p className="text-text-secondary text-base sm:text-lg mb-6 max-w-2xl">
           {project.tagline}
         </p>
-        <p className="text-sm text-text-secondary leading-relaxed mb-8 max-w-3xl">
+        <p className="text-base text-text-secondary leading-relaxed mb-8 max-w-3xl">
           {project.description}
         </p>
 
@@ -58,10 +58,10 @@ export default function FeaturedProjectCard({ project }) {
               className="rounded-2xl border border-border bg-white/[0.02] p-5 hover:bg-white/[0.04] transition-colors duration-300"
             >
               <CheckCircle2 size={16} className="text-accent-2 mb-3" />
-              <h4 className="text-sm font-semibold text-text-primary mb-2">
+              <h4 className="text-base font-semibold text-text-primary mb-2">
                 {h.title}
               </h4>
-              <p className="text-xs text-text-secondary leading-relaxed">
+              <p className="text-sm text-text-secondary leading-relaxed">
                 {h.detail}
               </p>
             </motion.div>
@@ -80,10 +80,10 @@ export default function FeaturedProjectCard({ project }) {
           </div>
         </div>
 
-        {/* Key backend features */}
+        {/* Key features */}
         <div>
           <p className="text-xs font-mono uppercase tracking-widest text-text-secondary mb-3">
-            Key Backend Features
+            Key Features
           </p>
           <div className="flex flex-wrap gap-2">
             {project.keyFeatures.map((feature) => (
