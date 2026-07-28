@@ -38,10 +38,16 @@ export default function FeaturedProjectCard({ project, badgeLabel = "Featured Pr
 
         {/* CTA buttons */}
         <div className="flex flex-wrap gap-4 mb-10">
-          <GlowButton href={project.demo} variant="primary" icon={ArrowUpRight}>
-            Live Demo
-          </GlowButton>
-          <GlowButton href={project.github} variant="secondary" icon={FaGithub}>
+          {project.demo && (
+            <GlowButton href={project.demo} variant="primary" icon={ArrowUpRight}>
+              Live Demo
+            </GlowButton>
+          )}
+          <GlowButton
+            href={project.github}
+            variant={project.demo ? "secondary" : "primary"}
+            icon={FaGithub}
+          >
             View Code
           </GlowButton>
         </div>

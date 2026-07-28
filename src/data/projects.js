@@ -93,5 +93,66 @@ export const projects = [
       }
     ],
     keyFeatures: ["Finnhub API", "Recharts", "Compound Indexing", "In-Memory Caching"]
+  },
+  {
+    id: "creditsea",
+    featured: false,
+    name: "CreditSea — Loan Management System",
+    tagline: "Full-stack loan management system with role-based processing and business rule engine",
+    description:
+      "A full-stack Loan Management System (LMS) built with MERN, Next.js, TypeScript, and MongoDB, featuring role-based loan processing, a Business Rule Engine (BRE), JWT authentication, a multi-step loan application workflow, and complete loan lifecycle management.",
+    stack: [
+      "Next.js", "TypeScript", "Node.js", "Express.js", "MongoDB",
+      "Mongoose", "Tailwind CSS", "JWT Authentication", "RBAC"
+    ],
+    github: "https://github.com/RishabhAgni2/Loan-Management-System",
+    demo: "https://loan-management-system-phi-rosy.vercel.app/login",
+    highlights: [
+      {
+        title: "Role-Based Loan Processing",
+        detail:
+          "Implemented a Business Rule Engine (BRE) and Role-Based Access Control (RBAC) to route loan applications through distinct approval flows depending on the user's role in the system."
+      },
+      {
+        title: "Multi-Step Application Workflow",
+        detail:
+          "Built a multi-step loan application workflow in Next.js and TypeScript, guiding applicants through structured data collection before submission for review."
+      },
+      {
+        title: "JWT-Secured Full Lifecycle Management",
+        detail:
+          "JWT authentication protects all loan lifecycle operations end-to-end — from application submission through review, approval, and disbursement tracking."
+      }
+    ],
+    keyFeatures: ["Business Rule Engine", "RBAC", "JWT", "Multi-Step Workflow", "TypeScript"]
+  },
+  {
+    id: "healthcarebackend",
+    featured: false,
+    name: "HealthcareBackend",
+    tagline: "Django REST Framework backend for patient & doctor management",
+    description:
+      "A Django REST Framework backend featuring JWT authentication, PostgreSQL, patient and doctor CRUD APIs, and clean RESTful architecture — built as a dedicated backend-only service.",
+    stack: ["Python", "Django", "Django REST Framework", "PostgreSQL", "JWT Authentication"],
+    github: "https://github.com/RishabhAgni2/HealthcareBackend",
+    demo: null,
+    highlights: [
+      {
+        title: "JWT-Secured REST API",
+        detail:
+          "Built with Django REST Framework, using JWT authentication to protect all patient and doctor management endpoints."
+      },
+      {
+        title: "Patient & Doctor CRUD APIs",
+        detail:
+          "Full CRUD operations for patient and doctor records, structured around Django's app-based architecture for maintainability."
+      },
+      {
+        title: "PostgreSQL Data Layer",
+        detail:
+          "Uses PostgreSQL as the primary data store with Django's ORM, following clean RESTful API design principles throughout."
+      }
+    ],
+    keyFeatures: ["Django REST Framework", "JWT", "PostgreSQL", "REST API", "Healthcare Domain"]
   }
 ];

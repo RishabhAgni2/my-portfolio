@@ -1,8 +1,9 @@
 export const achievements = [
   {
-    title: "Rank 3 — Hack-O-Sprint 2.0",
-    detail: "Internal hackathon at IIIT Bhopal for Smart India Hackathon (SIH) 2024 — built a working solution under strict time constraints.",
-    icon: "trophy"
+    title: "1800+ LeetCode Rating, 600+ DSA Problems",
+    detail: "Solved 600+ DSA problems across LeetCode, CodeChef, and GeeksforGeeks covering arrays, trees, graphs, dynamic programming, and system design fundamentals.",
+    link: "https://leetcode.com/u/Rishabh_Agni1/",
+    icon: "code"
   },
   {
     title: "3-Star CodeChef, Global Rank 84",
@@ -11,9 +12,8 @@ export const achievements = [
     icon: "star"
   },
   {
-    title: "600+ DSA Problems Solved",
-    detail: "Across LeetCode, CodeChef, and GeeksforGeeks — covering arrays, trees, graphs, dynamic programming, and system design fundamentals.",
-    link: "https://leetcode.com/u/Rishabh_Agni1/",
-    icon: "code"
+    title: "Rank 3 — Hack-O-Sprint 2.0",
+    detail: "Internal hackathon at IIIT Bhopal for Smart India Hackathon (SIH) 2024 — built a working solution under strict time constraints.",
+    icon: "trophy"
   }
 ];

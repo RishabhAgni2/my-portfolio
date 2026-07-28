@@ -6,6 +6,8 @@ const badgeLabels = {
   trusttrade: "Featured Project",
   chainverify: "Blockchain Project",
   fintrack: "Data & Analytics Project",
+  creditsea: "Full-Stack Assignment Project",
+  healthcarebackend: "Backend Project",
 };
 
 export default function Projects() {
